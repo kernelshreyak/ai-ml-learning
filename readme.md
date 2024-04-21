@@ -1,6 +1,7 @@
-## AI ML Starter
+## AI ML Learning
 
-This is a starter repo for working with AI & ML projects with basic set of libraries which are most widely used
+This repo contains notebooks for a variety of AI & ML topics and models
+
 
 ### Local setup
 
@@ -24,4 +25,10 @@ This is a starter repo for working with AI & ML projects with basic set of libra
 
 4. Install Jupyter extension in VSCode https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter
 
-After completing above steps, the sample.ipynb notebook can be used to run sample codes
+After completing above steps, any of the notebooks can be run like usual
+
+### Azure AI learning
+
+This folder contains notebooks which I used for testing during my learning for AI-900 and DP-900 courses from Microsoft
+
+
