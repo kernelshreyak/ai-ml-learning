@@ -10,3 +10,4 @@ mediapipe
 fastapi
 uvicorn[standard]
 starlette
+tensorflow_hub
