@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real-Time Pose Detection</title>
+    <style>
+        #output {
+            display: block;
+            margin: auto;
+            width: 640px;
+            height: 480px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Real-Time Pose Detection</h1>
+    <video id="video" width="640" height="480" autoplay></video>
+    <img id="output" />
+    <script>
+        const video = document.getElementById('video');
+        const output = document.getElementById('output');
+        const websocket = new WebSocket('ws://localhost:8000/ws');
+
+        websocket.binaryType = 'arraybuffer';
+
+        function startVideoStream() {
+            navigator.mediaDevices.getUserMedia({ video: true })
+                .then(stream => {
+                    video.srcObject = stream;
+                    video.play();
+
+                    const canvas = document.createElement('canvas');
+                    canvas.width = 640;
+                    canvas.height = 480;
+                    const context = canvas.getContext('2d');
+
+                    video.addEventListener('play', function() {
+                        setInterval(() => {
+                            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+                            canvas.toBlob(blob => {
+                                const reader = new FileReader();
+                                reader.onloadend = () => {
+                                    websocket.send(reader.result);
+                                };
+                                reader.readAsArrayBuffer(blob);
+                            }, 'image/jpeg');
+                        }, 100);
+                    });
+                })
+                .catch(err => console.error('Error accessing the camera: ', err));
+        }
+
+        websocket.onmessage = function(event) {
+            const blob = new Blob([event.data], { type: 'image/jpeg' });
+            output.src = URL.createObjectURL(blob);
+        };
+
+        startVideoStream();
+    </script>
+</body>
+</html>
