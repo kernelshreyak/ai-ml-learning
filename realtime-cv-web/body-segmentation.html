@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Body Segmentation Realtime Web Demo</title>
+</head>
+<body>
+    <h3>TEST</h3>
+    <video id="webcam" width="400" height="400" autoplay></video>
+    <button id="startWebcam">Start Webcam</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl" />
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/body-segmentation" />
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/selfie_segmentation" />
+
+    <script>
+        function startWebcam() {
+            const videoElement = document.getElementById('webcam');
+
+            // Check if the getUserMedia API is supported
+            if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+                // Request access to the webcam
+                navigator.mediaDevices.getUserMedia({ video: true })
+                    .then(function(stream) {
+                        // Set the source of the video element to the stream
+                        videoElement.srcObject = stream;
+                    })
+                    .catch(function(error) {
+                        console.error("Error accessing webcam:", error);
+                    });
+            } else {
+                alert("getUserMedia is not supported in this browser.");
+            }
+        }
+
+        // Add an event listener to the button
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('startWebcam').addEventListener('click', startWebcam);
+        });
+    </script>
+</body>
+</html>
