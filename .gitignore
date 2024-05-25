@@ -1,4 +1,4 @@
-venv
+.venv
 .env
 azure-ai-learning/venv
 sample_datasets/image/input
