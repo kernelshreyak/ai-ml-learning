@@ -1,9 +1,9 @@
-numpy 
-scipy 
+numpy
+scipy
 pandas
 scikit-learn
-matplotlib 
-seaborn 
+matplotlib
+seaborn
 opencv-python
 tensorflow
 mediapipe
@@ -11,3 +11,9 @@ fastapi
 uvicorn[standard]
 starlette
 tensorflow_hub
+openai
+langchain
+langchain-community
+langchain-openai
+langgraph
+phidata

@@ -3,3 +3,4 @@
 azure-ai-learning/venv
 sample_datasets/image/input
 models
+.ipynb_checkpoints
