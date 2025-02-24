@@ -1,6 +1,8 @@
 ## AI ML Learning
 
-This repo contains notebooks for a variety of AI & ML topics and models
+This repo contains notebooks for a variety of AI & ML topics and models.
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/kernelshreyak/ai-ml-learning/HEAD?urlpath=%2Fdoc%2Ftree%2Fsample.ipynb) 
 
 
 ### Local setup
