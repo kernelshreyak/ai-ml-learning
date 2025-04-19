@@ -5,7 +5,7 @@ scikit-learn
 matplotlib
 seaborn
 opencv-python
-tensorflow
+tensorflow-cpu
 mediapipe
 fastapi
 uvicorn[standard]
@@ -17,3 +17,4 @@ langchain-community
 langchain-openai
 langgraph
 phidata
+jupyterlab
