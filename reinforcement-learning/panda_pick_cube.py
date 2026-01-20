@@ -378,7 +378,7 @@ def train_model(total_timesteps: int, model_path: str, episode_len: int):
         device="cpu",
         verbose=1,
         n_steps=1024,
-        batch_size=4096,
+        batch_size=3072,
         n_epochs=10,
         learning_rate=3e-4,
         gamma=0.99,
