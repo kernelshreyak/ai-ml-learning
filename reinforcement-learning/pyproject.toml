@@ -1,0 +1,71 @@
+[project]
+name = "rl-lab"
+version = "0.1.0"
+description = "CPU-scaled reinforcement learning environment for robotics and control"
+requires-python = ">=3.10,<3.13"
+
+dependencies = [
+    # -----------------------------
+    # Core RL stack
+    # -----------------------------
+    "gymnasium>=0.29",
+    "stable-baselines3>=2.2.1",
+
+    # -----------------------------
+    # Physics / robotics
+    # -----------------------------
+    "pybullet>=3.2.6",
+    "gymnasium[box2d]>=0.29",      # LunarLander, Box2D envs
+
+    # -----------------------------
+    # Numeric / performance
+    # -----------------------------
+    "numpy>=1.24",
+    "scipy>=1.10",
+
+    # -----------------------------
+    # Logging / monitoring
+    # -----------------------------
+    "tensorboard>=2.14",
+    "tqdm>=4.66",
+
+    # -----------------------------
+    # Video + rendering
+    # -----------------------------
+    "opencv-python>=4.8",
+    "imageio>=2.31",
+    "imageio-ffmpeg>=0.4.9",
+
+    # -----------------------------
+    # Utilities
+    # -----------------------------
+    "cloudpickle>=2.2",
+    "psutil>=5.9",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ipython",
+    "jupyterlab",
+    "ruff",
+    "black",
+]
+
+# -----------------------------
+# uv-specific configuration
+# -----------------------------
+[tool.uv]
+resolution = "highest"
+
+# Prefer binary wheels (important for fast install on c2)
+#prefer-binary = true
+
+# -----------------------------
+# Ruff (optional but recommended)
+# -----------------------------
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "W"]
+
+[tool.black]
+line-length = 100
