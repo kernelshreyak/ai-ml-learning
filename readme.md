@@ -60,7 +60,9 @@ This folder contains notebooks which I used for testing during my learning for A
 - **langchain_learning/**: Contains resources for learning LangChain, with a focus on basic chain operations.
 - **language-models/**: Contains resources related to language models, including text summarization and RNN models.
 - **llama3.2-fine-tuning/**: Contains resources for fine-tuning LLaMA 3.2 models.
-- **multi-agent-llm/**: Contains resources for multi-agent large language models, with notebooks for agentic systems.
+- **multi-agent-llm/**: Contains resources for multi-agent large language models, with notebooks for agentic systems and examples like `multi-agent-llm/negotiation_agents.py` and `multi-agent-llm/two_agent_student_teacher.py`.
+- **multi-agent-llm/negotiation_agents.py**: Example of negotiation between agents.
+- **multi-agent-llm/two_agent_student_teacher.py**: Example of a two-agent student/teacher setup.
 - **object-detection/**: Contains resources for object detection tasks, including YOLOv8 inference.
 - **realtime-cv-web/**: Contains resources for real-time computer vision on the web, with HTML, JavaScript, and Python components.
 - **sample_datasets/**: Contains sample datasets for experiments, including bank marketing and temperature data.
