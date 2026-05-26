@@ -66,6 +66,9 @@ This folder contains notebooks which I used for testing during my learning for A
 - **multi-agent-llm/two_agent_student_teacher.py**: Example of a two-agent student/teacher setup.
 - **object-detection/**: Contains resources for object detection tasks, including YOLOv8 inference.
 - **realtime-cv-web/**: Contains resources for real-time computer vision on the web, with HTML, JavaScript, and Python components.
+- **rag-pipelines/**: Contains notebook experiments for hybrid RAG pipelines, agentic retrieval loops, and CLIP model testing.
+- **rag-pipelines/agentic_hybrid_rag_with_bm25_rrf.ipynb**: Notebook for an agentic hybrid RAG pipeline with BM25 retrieval and RRF ranking.
+- **rag-pipelines/CLIP_model_test.ipynb**: Notebook for CLIP model testing and reference-based experimentation.
 - **sample_datasets/**: Contains sample datasets for experiments, including bank marketing and temperature data.
 - **text-to-speech/**: Contains resources for text-to-speech tasks, including basic conversion and OpenAI audio models.
 - **time-series-forecasting/**: Contains resources for time series forecasting, with a focus on sales data.
