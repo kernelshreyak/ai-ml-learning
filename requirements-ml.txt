@@ -1,0 +1,28 @@
+-r requirements.txt
+
+# CPU-only PyTorch wheels
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+accelerate
+datasets
+diffusers
+gym
+gymnasium
+imageio
+mediapipe
+opencv-python
+Pillow
+pixellib
+pybullet
+pytorch-lightning
+stable-baselines3
+tensorboard
+tensorflow-cpu
+tensorflow_hub
+torch
+torchaudio
+torchvision
+transformers
+trl
+ultralytics
+wandb

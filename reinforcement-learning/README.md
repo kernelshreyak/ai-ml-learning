@@ -15,12 +15,12 @@ Collection of small reinforcement learning experiments and notebooks.
 
 ### Setup
 
-Use the repo-level virtual environment and dependencies:
+Use the repo-level virtual environment and install the ML dependency set:
 
 ```bash
 python3 -m venv venv
 source venv/bin/activate
-pip install -r ../requirements.txt
+pip install -r ../requirements-ml.txt
 ```
 
 ### Run

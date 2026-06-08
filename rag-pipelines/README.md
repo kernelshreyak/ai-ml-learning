@@ -20,7 +20,7 @@ From the repository root:
 ```bash
 python3 -m venv venv
 source venv/bin/activate
-pip install -r requirements.txt
+pip install -r requirements-ml.txt
 ```
 
 Then open the notebooks from this folder in Jupyter or VS Code and run them as usual.
