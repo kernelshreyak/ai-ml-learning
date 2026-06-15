@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="CSV File Import" position="(255.0, 150.00000000000003)" />
+		<node id="1" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table" position="(450, 150)" />
+		<node id="2" name="Column Statistics" qualified_name="Orange.widgets.data.owfeaturestatistics.OWFeatureStatistics" project_name="Orange3" version="" title="Column Statistics" position="(707.5, 301.6666666666667)" />
+		<node id="3" name="Python Script" qualified_name="Orange.widgets.data.owpythonscript.OWPythonScript" project_name="Orange3" version="" title="Data cleaning" position="(661.6666666666667, 148.33333333333334)" />
+		<node id="4" name="Data Info" qualified_name="Orange.widgets.data.owdatainfo.OWDataInfo" project_name="Orange3" version="" title="Data Info" position="(530.0000000000001, 361.66666666666674)" />
+		<node id="5" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table Cleaned" position="(920.8333333333336, 221.66666666666669)" />
+		<node id="6" name="Correlations" qualified_name="Orange.widgets.data.owcorrelations.OWCorrelations" project_name="Orange3" version="" title="Correlations" position="(1125.8333333333328, 269.9999999999999)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="1" source_node_id="1" sink_node_id="2" source_channel="Selected Data" sink_channel="Data" enabled="true" source_channel_id="selected_data" sink_channel_id="data" />
+		<link id="2" source_node_id="1" sink_node_id="3" source_channel="Selected Data" sink_channel="Data" enabled="true" source_channel_id="selected_data" sink_channel_id="data" />
+		<link id="3" source_node_id="1" sink_node_id="4" source_channel="Selected Data" sink_channel="Data" enabled="true" source_channel_id="selected_data" sink_channel_id="data" />
+		<link id="4" source_node_id="3" sink_node_id="5" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="5" source_node_id="5" sink_node_id="6" source_channel="Selected Data" sink_channel="Data" enabled="true" source_channel_id="selected_data" sink_channel_id="data" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'AbsPath', 'path': '/home/shreyak/programming/ai-ml-learning/datascience/datasets/mymoviedb.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 9, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/home/shreyak/programming/ai-ml-learning/datascience/datasets', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\xac\x00\x00\x00\xfa\x00\x00\x03\xe8\x00\x00\x02\\\x00\x00\x02\xad\x00\x00\x01\x18\x00\x00\x03\xe7\x00\x00\x02[\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x02\xad\x00\x00\x01\x18\x00\x00\x03\xe7\x00\x00\x02[', '__version__': 3}</properties>
+		<properties node_id="1" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x07\x7f\x00\x00\x04\x12\x00\x00\x02&amp;\x00\x00\x00\xe7\x00\x00\x06\x95\x00\x00\x03e\x00\x00\x00\x00\x02\x00\x00\x00\x07\x80\x00\x00\x00\x00\x00\x00\x00\x1d\x00\x00\x07\x7f\x00\x00\x04\x12', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [('Vote_Count', 1), ('Vote_Average', -1)], '__version__': 1}</properties>
+		<properties node_id="2" format="pickle">gASV5QEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZl
+ZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAAAAAGoAAAAyQAABcMAAALgAAABqQAAAOcAAAXCAAAC
+2gAAAAAAAAAAB4AAAAGpAAAA5wAABcIAAALalIwHc29ydGluZ5RLAIwMUHlRdDYuUXRDb3JllIwM
+UXQuU29ydE9yZGVylJOUSwCFlFKUhpSMC19fdmVyc2lvbl9flEsCjBBjb250ZXh0X3NldHRpbmdz
+lF2UjBVvcmFuZ2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQo
+jAljb2xvcl92YXKUTkr+////hpSMDXNlbGVjdGVkX3ZhcnOUXZRoDEsCdYwKYXR0cmlidXRlc5R9
+lCiMDFJlbGVhc2VfRGF0ZZRLBIwKUG9wdWxhcml0eZRLAowKVm90ZV9Db3VudJRLAowMVm90ZV9B
+dmVyYWdllEsCjBFPcmlnaW5hbF9MYW5ndWFnZZRLAXWMBW1ldGFzlH2UKIwFVGl0bGWUSwOMCE92
+ZXJ2aWV3lEsDjAVHZW5yZZRLA4wKUG9zdGVyX1VybJRLA3V1YmF1Lg==
+</properties>
+		<properties node_id="3" format="literal">{'controlAreaVisible': True, 'currentScriptIndex': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\x17\x00\x00\x00\x97\x00\x00\x07\r\x00\x00\x03u\x00\x00\x02\x18\x00\x00\x00\xb5\x00\x00\x07\x0c\x00\x00\x03o\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x02\x18\x00\x00\x00\xb5\x00\x00\x07\x0c\x00\x00\x03o', 'scriptLibrary': [{'name': 'New script', 'script': 'import numpy as np\nfrom Orange.data import Table, Domain, ContinuousVariable, DiscreteVariable\n\nprint(in_data[2])', 'filename': None}], 'scriptText': "import numpy as np\nfrom Orange.data import Table, Domain, ContinuousVariable, DiscreteVariable\n\n\n# 1. Check if input data actually exists to avoid errors\nif in_data is not None:\n    # 2. Create a copy of the input data table so you don't corrupt the original\n    out_data = in_data.copy()\n    \n    # 3. Modify the data (e.g., changing missing values to 0)\n    out_data.X[np.isnan(out_data.X)] = 0\nelse:\n    # If no data is connected, output nothing\n    out_data = None", 'splitterState': b'\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\xaa\x00\x00\x00h\x01\xff\xff\xff\xff\x01\x00\x00\x00\x02\x00', 'vimModeEnabled': False, '__version__': 2}</properties>
+		<properties node_id="4" format="literal">{'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03\x04\x00\x00\x01P\x00\x00\x04z\x00\x00\x02h\x00\x00\x03\x05\x00\x00\x01n\x00\x00\x04y\x00\x00\x02g\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x03\x05\x00\x00\x01n\x00\x00\x04y\x00\x00\x02g', '__version__': 1}</properties>
+		<properties node_id="5" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x07\x7f\x00\x00\x04\x12\x00\x00\x02/\x00\x00\x00\xf1\x00\x00\x07"\x00\x00\x02\xed\x00\x00\x00\x00\x02\x00\x00\x00\x07\x80\x00\x00\x00\x00\x00\x00\x00\x1d\x00\x00\x07\x7f\x00\x00\x04\x12', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
+		<properties node_id="6" format="pickle">gASVkAEAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBBjb3JyZWxhdGlvbl90eXBllEsA
+jA5pbXB1dGVfbWlzc2luZ5SIjBNzYXZlZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAAAAAMGAAAA
++wAABm4AAANWAAADBwAAARkAAAZtAAADUAAAAAAAAAAAB4AAAAMHAAABGQAABm0AAANQlIwLX192
+ZXJzaW9uX1+USwOMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SM
+B0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMB2ZlYXR1cmWUTkr+////hpSMCXNlbGVjdGlv
+bpRdlCiMClBvcHVsYXJpdHmUS2aGlIwKVm90ZV9Db3VudJRLZoaUZUr9////hpRoBksDdYwKYXR0
+cmlidXRlc5R9lCiMDFJlbGVhc2VfRGF0ZZRLBGgUSwJoFksCjAxWb3RlX0F2ZXJhZ2WUSwJ1jAVt
+ZXRhc5R9lHViYXUu
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

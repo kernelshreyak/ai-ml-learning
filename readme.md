@@ -3,6 +3,9 @@
 Repository of AI, ML, CV, NLP, and LLM experiments, notebooks, and scripts.
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/kernelshreyak/ai-ml-learning/HEAD?urlpath=%2Fdoc%2Ftree%2Fsample.ipynb)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/kernelshreyak/ai-ml-learning)
+
+DeepWiki docs are available for browsing the repository structure and code context.
 
 ## Quick Start
 
