@@ -6,3 +6,4 @@ models
 .ipynb_checkpoints
 .virtual_documents
 trained_models_computervision
+.flash
