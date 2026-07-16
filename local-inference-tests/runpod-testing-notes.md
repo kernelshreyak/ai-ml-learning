@@ -1,4 +1,3 @@
-````md
 # RunPod Testing Devlog
 
 ---
@@ -74,4 +73,3 @@ Spent the day exploring RunPod to become familiar with its interface, workflow, 
 - ✅ Works successfully.
 - Very low cold-start time.
 - More cost-effective than the alternative approaches tested.
-````
